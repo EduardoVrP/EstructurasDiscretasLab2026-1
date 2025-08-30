@@ -54,6 +54,10 @@ menorQue x y = x < y
 relacionMenor :: Rel Int Int
 relacionMenor = [(x, y) | x <- [1..9], y <- [1..4], menorQue x y]
 
---aRb si a es multiplo de y
+--aRb si a es multiplo de b
 relacionMultiplo :: Rel Int Int
 relacionMultiplo = [(x,y) | x <- [1..9], y <- [1..4], esMultiplo x y]
+
+--aRb si a*b es mayor que n
+relacionMayorN :: Int -> Rel Int Int
+relacionMayorN n = [(x,y) | x <- [1..9], y <- [1..4], x*y > n]
