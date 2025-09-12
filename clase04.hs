@@ -1,3 +1,7 @@
+suma :: (Num a) => a -> a -> a
+suma x y = x + y
+
+
 {-
 Figuras geometricas con los siguientes parametros:
     + El circulo recibe el radio
